@@ -15,9 +15,9 @@ class DeviceVendorSeeder extends Seeder
      */
     public function run()
     {
-        if (!DeviceVendor::where('vendor', "MikroTik")->first()) {
+        if (!DeviceVendor::where('vendor', "Routerboard.com")->first()) {
             DeviceVendor::create([
-                'vendor' => "MikroTik",
+                'vendor' => "Routerboard.com",
                 'has_api' => true
             ]);
         }

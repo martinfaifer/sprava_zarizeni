@@ -22,6 +22,6 @@ class DeviceVendor extends Model
 
     public function devices()
     {
-        return $this->hasMany(Device::class, 'device_vendor_id', 'id');
+        return $this->hasMany(Device::class, 'device_vendor_id', 'id')->select(['id', 'description', 'ip_address', 'mac_address']);
     }
 }

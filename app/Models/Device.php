@@ -26,6 +26,6 @@ class Device extends Model
 
     public function login()
     {
-        return $this->belongsTo(DeviceLogin::class, 'device_vendor_id', 'id');
+        return $this->belongsTo(DeviceLogin::class, 'device_login_id', 'id');
     }
 }

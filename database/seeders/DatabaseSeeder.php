@@ -15,9 +15,10 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
-            DeviceVendorSeeder::class,
-            DeviceLoginSeeder::class,
-            DhcpServerSeeder::class
+            UserSeed::class,
+            // DeviceVendorSeeder::class,
+            // DeviceLoginSeeder::class,
+            // DhcpServerSeeder::class
         ]);
     }
 }
